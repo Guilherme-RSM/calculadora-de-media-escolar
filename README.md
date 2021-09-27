@@ -10,3 +10,5 @@ na qual foram estudados e empregados os seguintes conceitos:<br>
 *Estruturas condicionais If Else, <br>
 *Seleção de elementos por ID,
 
+<img src="img/preview.gif">
+
