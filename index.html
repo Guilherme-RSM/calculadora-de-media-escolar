@@ -3,53 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- title add -->
   <title> Calculadora de Média Escolar - Imersão Dev Alura III</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/logica.js"></script>
+
+  <!-- styled add -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- script add -->
+  <script type="text/javascript" src="assets/js/script.js"></script>
 
 
 </head>
 
 <body>
 
-  
-
-  <!--Formulário para inserir as Notas e Dados do Aluno-->
-
-  <h1 class="page-title">
-    Calculadora de Média Escolar</h1>
-
-  <h3 class="page-subtitle">
-    Descubra se já poderá ou não curtir as suas férias...
-    <br>
-  </h3>
+  <!--Form insert && data students-->
+  <header id="header">
+    <!-- Page Title-->
+    <h1 class="page-title">
+      Calculadora de Média Escolar
+    </h1>
+    <h3 class="page-subtitle">
+      Descubra se já poderá ou não curtir as suas férias...
+    </h3>
   </header>
+
+  <!-- Container -->
   <div id="container">
-    <label for="nota1">1º Bimestre</label>
-    <input type="number" placeholder="Insira sua nota aqui" id="nota1" class="notas">
-    <br>
+    <div class="formContainer">
+      <div>
+        <label for="nota1">1º Bimestre</label>
+        <input type="number" placeholder="Insira sua nota aqui" id="nota1" class="notas">
+      </div>
 
-    <label for="nota2">2º Bimestre</label>
-    <input type="number" placeholder="Insira sua nota aqui" id="nota2" class="notas">
-    <br>
+      <div>
+        <label for="nota2">2º Bimestre</label>
+        <input type="number" placeholder="Insira sua nota aqui" id="nota2" class="notas">
+      </div>
 
-    <label for="nota3">3º Bimestre</label>
-    <input type="number" placeholder="Insira sua nota aqui" id="nota3" class="notas">
-    <br>
+      <div>
+        <label for="nota3">3º Bimestre</label>
+        <input type="number" placeholder="Insira sua nota aqui" id="nota3" class="notas">
+      </div>
+      
+      <div>
+        <label for="nota4">4º Bimestre</label>
+        <input type="number" placeholder="Insira sua nota aqui" id="nota4" class="notas">
+      </div>
 
-    <label for="nota4">4º Bimestre</label>
-    <input type="number" placeholder="Insira sua nota aqui" id="nota4" class="notas">
+      <div>
+        <button onclick="calcularNota()" id="enviar">Calcular Média</button>
+        <button onclick="limparNota()" id="limpar">Limpar</button>
+      </div>
 
-    <br>
-    <button onclick="calcularNota()" id="enviar">Calcular Média</button>
-    <br>
-    
-    <button onclick="limparNota()" id="limpar">Limpar</button>
+      <div>
+        <h2 id="resultado"> RESULTADO </h2>
+        <a href="https://alura.com.br/" target="_blank"></a>
+      </div>
 
-    <h2 id="resultado"> RESULTADO </h2>
-    <a href="https://alura.com.br/" target="_blank">
-  </a>
-
+    </div>
 </body>
 
 </html>
