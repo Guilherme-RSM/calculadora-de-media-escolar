@@ -12,3 +12,5 @@ na qual foram estudados e empregados os seguintes conceitos:<br>
 
 <img src="img/preview.gif">
 
+👉<a href="https://guilherme-rsm.github.io/calculadora-de-media-escolar/" target="_blank">Clique Aqui para testar a Calculadora de Média Escolar</a> 📱
+
